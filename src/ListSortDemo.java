@@ -9,7 +9,7 @@ public class ListSortDemo {
 
         houselist.add(new House(7, "blue", 160, 1980));
 
-        houselist.add(new House(9, "yellow", 250, 1980));
+        houselist.add(new House(9, "red", 250, 1981));
 
         houselist.add(new House(4, "red", 80, 1980));
 
@@ -21,6 +21,9 @@ public class ListSortDemo {
 //        Collections.sort(houselist, new HouseColorDescComparator());
         houselist.sort(new HouseColorDescComparator());
 
+        System.out.println(houselist);
+
+        houselist.sort(new HouseColorYearComparator());
         System.out.println(houselist);
     }
 }
